@@ -23,6 +23,9 @@ $ make lambda-local
 # invoke lambda locally
 # it requests local endpoint with sample event data (sample.json)
 $ make test-invoke
+make test-invoke
+Invoking lambda
+{"ok":false,"message":"Error message here..."}
 ```
 
 ## Reference
