@@ -11,6 +11,8 @@ This is minimum example to develop and invoke locally Lambda Function (node.js)
 
 ## Usage
 
+### Invoke locally with docker container
+
 ```bash
 $ npm i
 
@@ -26,6 +28,29 @@ $ make test-invoke
 make test-invoke
 Invoking lambda
 {"ok":false,"message":"Error message here..."}
+```
+
+### Invoke locally without container
+
+If you don't need a container for local execution of Lambda handlers, you can also support local execution by directly calling the handler function from another module.
+
+Please refer to invoke-local.ts for sample code in such cases.
+
+```ts
+$ npx ts-node invoke-local.ts
+EVENT: 
+{
+  "key1": "value1",
+  "key2": "value2",
+  "key3": "value3"
+}
+key1 + key2 + key3: value1 + value2 + value3
+FunctionName: test-function
+Local invocation result:
+{
+  "ok": false,
+  "message": "Error message here..."
+}
 ```
 
 ## Reference
