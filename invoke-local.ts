@@ -18,6 +18,9 @@ const ctx = {
 // The handler type (defined in @types/aws-lambda) includes a callback parameter, but we don't use it in our handler function.
 // To pass the TypeScript compiler check, you should provide an empty callback function to the handler.
 // The callback function will never be called unless you include it in your handler function.
+// 
+// ref: https://docs.aws.amazon.com/lambda/latest/dg/typescript-handler.html
+// > We recommend that you use async/await to declare the function handler instead of using callbacks.
 const promise = handler(event, ctx, (err, result) => {});
 
 // If your handler returns something value, you can use the promise to handle the result.
