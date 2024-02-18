@@ -55,5 +55,6 @@ Local invocation result:
 
 ## Reference
 
-- https://docs.aws.amazon.com/lambda/latest/dg/nodejs-image.html
-- https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
+1. https://docs.aws.amazon.com/lambda/latest/dg/nodejs-image.html
+2. https://docs.aws.amazon.com/lambda/latest/dg/images-test.html
+3. https://docs.aws.amazon.com/lambda/latest/dg/typescript-handler.html
